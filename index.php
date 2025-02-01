@@ -30,12 +30,12 @@ if($result->num_rows > 0) {
     </div>
     <div class="card-body">
         <div class="mb-3 text-center">
-            <h2 class="card-title"><span class="text-info">RandomJokes</span></h2>
+            <h2 class="card-title"><span class="text-info opacity-75">RandomJokes</span></h2>
         </div>
         <p class="display-6" style="font-size: 1.6rem;"><?= htmlspecialchars($joke) ?></p>
     </div>
     <div class="card-footer d-flex justify-content-end align-items-center">
-        <a class="btn btn-outline-info" href="index.php">More Jokes</a>
+        <a class="btn btn-outline-info opacity-75" href="index.php">More Jokes</a>
     </div>
 </main>
 
