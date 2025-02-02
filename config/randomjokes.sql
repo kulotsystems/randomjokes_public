@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2024 at 04:43 AM
+-- Generation Time: Feb 02, 2025 at 04:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,21 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `randomjokes`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `emails`
---
-
-CREATE TABLE `emails` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `code` varchar(255) NOT NULL,
-  `expires_at` timestamp NULL DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -34625,12 +34610,6 @@ INSERT INTO `jokes` (`id`, `joke`) VALUES
 --
 
 --
--- Indexes for table `emails`
---
-ALTER TABLE `emails`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `jokes`
 --
 ALTER TABLE `jokes`
@@ -34639,12 +34618,6 @@ ALTER TABLE `jokes`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `emails`
---
-ALTER TABLE `emails`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `jokes`
